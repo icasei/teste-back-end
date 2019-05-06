@@ -19,6 +19,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   gem 'byebug', '~> 11.0.1'
   gem 'rspec-rails', '~> 3.8'
+  gem 'rails-controller-testing', '~> 1.0.4'
+  gem 'rspec-json_expectations', '~> 2.2.0'
+  gem 'mongoid-rspec', '~> 4.0.1', require: false
 end
 
 group :development do
