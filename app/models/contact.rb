@@ -5,6 +5,7 @@ class Contact
   include Mongoid::Timestamps
   field :email, type: String
   field :name, type: String
+  field :guid, type: String
 
   validates_presence_of :email, :name
   validates_uniqueness_of :email

@@ -18,7 +18,15 @@ RSpec.describe ContactsController do
       it 'should create a contact' do
         before_count = Contact.count
 
-        post :create, params: { contact: { name: 'i', email: 'casei@i.com' } }
+        params = {
+          contact: {
+            name: 'i',
+            email: 'casei@i.com',
+            guid: '0d7c2c5b-55d2-482e-a00c-516bfe2e8f75'
+          }
+        }
+
+        post :create, params: params
 
         expect(Contact.count).to eq(before_count + 1)
         expect(response).to redirect_to(contact_url(assigns(:contact)))
@@ -41,7 +49,11 @@ RSpec.describe ContactsController do
   describe 'GET show' do
     context 'with an existing contact' do
       it 'assigns @contact' do
-        contact = Contact.create(name: 'Josef', email: 'blater@josef.com')
+        contact = Contact.create(
+          name: 'Josef',
+          email: 'blater@josef.com',
+          guid: '0d7c2c5b-55d2-482e-a00c-516bfe2e8f75'
+        )
 
         get :show, params: { id: contact._id }
 
