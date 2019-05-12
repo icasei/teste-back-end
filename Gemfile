@@ -8,6 +8,7 @@ gem 'puma', '~> 3.11'
 gem 'mongoid', '~> 7.0.2'
 gem 'redis', '~> 4.0'
 gem 'sidekiq', '~> 5.2.7'
+gem 'rack-cors', '~> 1.0.3'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
