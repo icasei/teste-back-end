@@ -21,11 +21,17 @@ After you've cloned the project,
 `cd teste-back-end`
 
 `gem install bundler`
+
 `bundle install`
+
 `docker run -d -p 27017:27017 -e AUTH=no mongo`
+
 `rake db:create`
+
 `rake db:mongoid:create_indexes`
+
 `bundle exec sidekiq -q development_default`
+
 
 And in another terminal:
 `bundle exec rails s`
@@ -37,7 +43,7 @@ Pages of this project that have the tracker:
   - localhost:3000/contacts/new
   - after you submit the form, the show page that you'll be redirected also have the tracker.
 
-Report:(wip on branch report)
+Report:
   - localhost:3000/visits/report
   - localhost:3000/visits/report.json
 
