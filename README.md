@@ -19,7 +19,7 @@ to perform the gem install.
 - Done! The application is ready and available at http://localhost:3000/
 
 ## Instructions for performing the automated tests 
-- On your terminal, go to the directory "testautomatized" and run the following command:
+- On your terminal, go to the directory "testautomatizado" and run the following command:
 "ruby driver_test.rb".
 - Done! Track test progress through your terminal or browser.
 
