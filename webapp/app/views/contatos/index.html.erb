@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Contato</title>
+        
+    </head>
+    <body>
+        <div class="centro">
+            <h1>Criando um contato</h1>
+             
+           
+            <%= form_for @contato do |f| %>
+                <div id="error">
+                    <% flash.each do |name, msg| %> 
+                        <p><%= msg %></p> 
+                    <% end %>
+                </div>
+                
+                <div class="centro-left">
+                
+                    <%= f.label :nome %>
+                    <%= f.text_field :nome,  id:'nome' %>
+                
+                    <%= f.label :email %>
+                    <%= f.text_field :email, id:'email' %>
+                                
+                </div>
+               <%= f.submit 'Salvar', id:'salvar' %>
+            <% end %>
+            
+
+           
+        </div>
+         <div class="centro">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nome</td>
+                            <th>Email</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% @contatos.each do |contato| %>
+                            <tr>
+                                <td><%= contato.nome %></td>
+                                <td><%= contato.email %></td>
+                            </tr>
+                        <% end %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

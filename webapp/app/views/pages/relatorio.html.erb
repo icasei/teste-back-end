@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Relatorio</title>
+    </head>
+    <body>
+        <div class="centro">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Visitante</td>
+                            <th>URL Visitada</td>
+                            <th>Data de Acesso</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% @rel.each do |r| %>
+                            <tr>
+                                <td><%= r.guid %></td>
+                                <td><%= r.url %></td>
+                                <td><%= r.data %></td>
+                            </tr>
+                        <% end %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+       
+    </body>
+</html>

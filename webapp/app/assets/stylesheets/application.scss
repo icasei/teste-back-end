@@ -1,0 +1,67 @@
+/*@import "bootstrap-sprockets";*/
+@import "bootstrap";
+@import "bootstrap-sprockets";
+$font-stack:    Helvetica, sans-serif;
+$primary-color: black;
+
+.box {
+    font: 100% $font-stack;
+    color: $primary-color;
+    
+    h3{
+        font-weight: bold;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    div:hover {
+        border-style: solid;
+        border-width: 0.5px;
+        background-color: white;
+      }
+   
+}
+
+#ativo{
+    color: white;
+}
+
+#ativo:hover{
+    background-color: #363636;
+}
+
+.centro{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    #esq{
+        align-items: left;  
+    }
+}
+
+#error{
+   
+    background-color:#FFFFE0;
+    p{
+        font-weight: bold;
+    }
+   
+}
+
+.centro-left{
+    align-items: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+body{
+    background-color: #F0FFFF;
+
+}

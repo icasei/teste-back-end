@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>   
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+              <div class="navbar-header">
+            
+                    <a class="navbar-brand" id="ativo" href="/">
+                   
+                    Rastreamento de Usuarios
+                   
+                    </a>
+                  
+              </div>
+              <ul class="nav navbar-nav">
+                <li ><a id="home" href="/">Home</a></li>
+                <li><a id="contato" href="/contatos">Contato</a></li>
+                <li><a id="sobre" href="/sobre">Sobre</a></li>
+                <li><a id="relatorio" href="/relatorio">Relatorio</a></li>
+              </ul>
+          </div>
+      </nav> 
+     
+    <%= yield %>
+  </body>
+</html>
