@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Visits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Guid</th>
+      <th>Url</th>
+      <th>Timestamp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @visits.each do |visit| %>
+      <tr>
+        <td><%= visit.guid %></td>
+        <td><%= visit.url %></td>
+        <td><%= visit.timestamp %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -47,4 +47,14 @@ RSpec.describe VisitsController do
       end
     end
   end
+
+  describe 'GET report' do
+    context 'without params' do
+      it 'returns up to 50 last visits' do
+        get :report, params: {}
+
+        expect(response).to have_http_status(:success)
+      end
+    end
+  end
 end
