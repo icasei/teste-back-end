@@ -12,19 +12,19 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        format.html { redirect_to @contact, notice: 'Contact created.' }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
+        format.json { render json: @contact.errors, status: 422 }
       end
     end
   end
 
-  def show
-  end
+  def show; end
 
   private
+
   def set_contact
     @contact = Contact.find(params[:id])
   end
