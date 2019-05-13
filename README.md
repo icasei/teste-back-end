@@ -33,10 +33,14 @@ And in another terminal:
 To run tests:
 `bundle exec rspec`
 
+Pages of this project that have the tracker:
+  - localhost:3000/contacts/new
+  - after you submit the form, the show page that you'll be redirected also have the tracker.
 
-* Ruby version
+Report:(wip on branch report)
+  - localhost:3000/visits/report
+  - localhost:3000/visits/report.json
 
-* System dependencies
 
 * Configuration
 
