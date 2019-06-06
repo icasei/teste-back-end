@@ -9,12 +9,22 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="stalker">
+    <div id="container">
 
-    <% flash.each do |key, value| %>
-      <%= content_tag :div, value, class: "flash #{key}" %>
-    <% end %>
+      <div id="header">
+        <h1>Stalker</h1>
+        <h3>Sistema de Rastreamento Realtime</h3>
+      </div>
+      <div id="content">
+      <% flash.each do |key, value| %>
+        <%= content_tag :div, value, class: "flash #{key}" %>
+      <% end %>
 
+        <%= yield %>
+
+      </div>
+      <div id="sidebar"></div>
+    </div>
   </body>
 </html>

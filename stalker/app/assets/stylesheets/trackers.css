@@ -2,3 +2,66 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+body {
+   font-family: Helvetica, Geneva, Arial, sans-serif;
+   font-size: small;
+   font-color: #000;
+   background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+a:link, a:active, a:visited {
+   color: #CD0000;
+}
+
+input {
+   margin-bottom: 5px;
+}
+
+p {
+   line-height: 150%;
+}
+
+div#container {
+   width: 760px;
+   margin: 0 auto;
+}
+
+div#header {
+   text-align: center;
+   padding-bottom: 15px;
+}
+
+div#content {
+   float: left;
+   width: 650px;
+   padding: 10px;
+}
+
+div#content h3 {
+   margin-top: 15px;
+}
+
+div#sidebar {
+   width: 200px;
+   margin-left: 480px;
+}
+div.flash.info {
+  width: 220px;
+  background: #f5f1f1;
+  color: #fd1212;
+  border-color:#c6d880;
+  border-radius: 3px;
+}
