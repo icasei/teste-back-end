@@ -50,6 +50,13 @@ Desenvolver uma aplicação de Rastreamento de usuários
   
 Fique atento a problemas de performance e concorrência em uma grande quantidade de requisições. Caso julgue necessário o desenvolvimento de outras bibliotecas ou serviços, pode utilizar a tecnologia que quiser.
 
+## Obrigatório utilizar:
+- Arquitetura microservicos com APIs RESTFUL
+- Banco de dados relacional e no-sql
+- Alguma ferramenta de mensageria
+- Docker
+- Cobertura de testes unitários
+
 ## O que será avaliado?
 - Organização do projeto
 - Lógica do código
